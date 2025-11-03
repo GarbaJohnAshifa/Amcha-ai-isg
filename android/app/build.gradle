@@ -1,0 +1,40 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // ✅ Firebase Plugin
+}
+
+android {
+    namespace = "com.example.amcha_ai_dot_com"
+    compileSdk = 34  // ✅ Explicitly set instead of Flutter variables
+
+    defaultConfig {
+        applicationId = "com.example.amcha_ai_dot_com"
+        minSdk = 21  // ✅ Explicitly set instead of Flutter variables
+        targetSdk = 34  // ✅ Explicitly set instead of Flutter variables
+        versionCode = 1
+        versionName = "1.0.0"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.1.1') // ✅ Firebase BOM
+    implementation 'com.google.firebase:firebase-auth'  // ✅ Firebase Authentication
+    implementation 'com.google.firebase:firebase-firestore'  // ✅ Firestore for FAQs
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "974188379175",
+    "project_id": "garbajohn-dialogflow-9qth",
+    "storage_bucket": "garbajohn-dialogflow-9qth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974188379175:android:b763f8be9ef3a89e416202",
+        "android_client_info": {
+          "package_name": "com.example.amcha_ai_dot_com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlC6Od7or218el9BgCykcLfSV39upEBms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
