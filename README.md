@@ -126,16 +126,6 @@ flutter test
 3. Run `flutter analyze` and `flutter test` before opening a PR.
 4. Submit a pull request with a clear scope and test notes.
 
-## Screenshots
-
-Add screenshots or GIFs under `docs/images/` and reference them here.
-
-Example:
-
-```md
-![Chat Screen](docs/images/chat-home.png)
-![Voice Input](docs/images/voice-input.gif)
-```
 
 ## License
 
